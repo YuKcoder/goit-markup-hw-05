@@ -115,6 +115,7 @@ img {
   display: block;
   width: 100%;
   height: 4px;
+
   background-color: var(--accent-color);
   border-radius: 2px;
 }
@@ -260,6 +261,7 @@ img {
   width: 100%;
   height: 120px;
   margin-bottom: 30px;
+
   background-color: var(--light-bg-color);
   background-repeat: no-repeat;
   background-position: center;
@@ -393,6 +395,7 @@ img {
   align-items: center;
   width: 44px;
   height: 44px;
+
   border-radius: 50%;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -406,6 +409,7 @@ img {
 .social-icon {
   width: 20px;
   height: 20px;
+
   fill: #afb1b8;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -448,14 +452,14 @@ img {
   border: 1px solid var(--accent-color);
 }
 
-.client-link:hover .client-logo,
-.client-link:focus .client-logo {
-  fill: var(--accent-color);
-}
-
 .client-logo {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-link:hover .client-logo,
+.client-link:focus .client-logo {
+  fill: var(--accent-color);
 }
 
 /* Подвал */
@@ -485,6 +489,7 @@ img {
 
 .footer-address {
   margin-bottom: 9px;
+
   font-style: normal;
   line-height: 1.71;
   color: var(--light-text-color);
@@ -533,10 +538,11 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 99;
+
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
+  z-index: 99;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -555,7 +561,6 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 528px;
   height: 581px;
 
@@ -593,15 +598,16 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+
   fill: var(--dark-color);
 
+  transform: translate(-50%, -50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-close:hover .btn-icon,
 .btn-close:focus .btn-icon {
-  fill: #fff;
+  fill: var(--light-text-color);
 }
 
 /* Cтили для portfolio.html */
@@ -669,6 +675,7 @@ img {
 
 .portfolio-link {
   display: block;
+
   text-decoration: none;
   color: inherit;
 
@@ -692,10 +699,11 @@ img {
   display: block;
   width: 100%;
   height: 100%;
+
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
-  transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:hover .overlay,
@@ -707,8 +715,6 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-
   min-width: 322px;
   margin: 0;
 
@@ -716,10 +722,13 @@ img {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--light-text-color);
+
+  transform: translate(-50%, -50%);
 }
 
 .portfolio-content {
   padding: 20px 24px;
+
   border: 1px solid #eeeeee;
   border-top: none;
 }
