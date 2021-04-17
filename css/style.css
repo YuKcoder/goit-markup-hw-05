@@ -473,6 +473,7 @@ img {
 
 .footer-container {
   display: flex;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -508,7 +509,7 @@ img {
   padding-bottom: 9px;
 }
 
-/* Социальные сети */
+/* Социальные сети в подвале */
 
 .social-text {
   font-weight: 700;
